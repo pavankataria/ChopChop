@@ -34,7 +34,7 @@ import UIKit
 
 protocol PKImageMatrixCropperProtocol {
     func cropToSquare() -> UIImage
-    func cropToMatrix(matrix: (rows: Int, cols: Int)) -> [UIImage]
+    func cropToMatrix(matrix: (rowNum: Int, colNum: Int)) -> [UIImage]
 }
 extension UIImage: PKImageMatrixCropperProtocol {
     func cropToSquare() -> UIImage
@@ -42,9 +42,9 @@ extension UIImage: PKImageMatrixCropperProtocol {
         return PKImageMatrixCropper.cropToSquare(image: self)
     }
     
-    func cropToMatrix(matrix: (rows: Int, cols: Int)) -> [UIImage]
+    func cropToMatrix(matrix: (rowNum: Int, colNum: Int)) -> [UIImage]
     {
-        return PKImageMatrixCropper.cropImage(image: self, toMatrix: (rows: 2, cols: 2))
+        return PKImageMatrixCropper.cropImage(image: self, toMatrix: (matrix.rowNum, matrix.colNum))
     }
     
     // Example
