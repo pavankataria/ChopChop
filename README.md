@@ -1,5 +1,6 @@
 # Chop Chop (v1)
 ![ChopChop](https://github.com/pavankataria/ChopChop/blob/master/Resources/ChopChop-cover.png)
+
 Chop an image to as many quadrants as you like at compile time. 
 Suitable for games and image processing.
 
