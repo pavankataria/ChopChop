@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		052DD50F1C47B74000D88F8E /* ChopChop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052DD50E1C47B74000D88F8E /* ChopChop.swift */; };
+		052DD5131C47B8A000D88F8E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 052DD5121C47B8A000D88F8E /* Info.plist */; };
+		052DD5181C47B90C00D88F8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 052DD5141C47B90C00D88F8E /* LaunchScreen.storyboard */; };
+		052DD5191C47B90C00D88F8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 052DD5161C47B90C00D88F8E /* Main.storyboard */; };
+		05D114191C41F22C00EF50D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D114181C41F22C00EF50D5 /* AppDelegate.swift */; };
+		05D114201C41F22C00EF50D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D1141F1C41F22C00EF50D5 /* Assets.xcassets */; };
+		05D1144C1C41F34900EF50D5 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D1144B1C41F34900EF50D5 /* ImageCollectionViewCell.swift */; };
+		05D1144E1C41F3CD00EF50D5 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D1144D1C41F3CD00EF50D5 /* ImageCollectionViewController.swift */; };
+		05D114501C41F43600EF50D5 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D1144F1C41F43600EF50D5 /* ImagePickerViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		052DD50E1C47B74000D88F8E /* ChopChop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChopChop.swift; sourceTree = "<group>"; };
+		052DD5121C47B8A000D88F8E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		052DD5151C47B90C00D88F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		052DD5171C47B90C00D88F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05D114151C41F22C00EF50D5 /* ChopChop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChopChop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05D114181C41F22C00EF50D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		05D1141F1C41F22C00EF50D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05D1144B1C41F34900EF50D5 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		05D1144D1C41F3CD00EF50D5 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
+		05D1144F1C41F43600EF50D5 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05D114121C41F22C00EF50D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05D1140C1C41F22C00EF50D5 = {
+			isa = PBXGroup;
+			children = (
+				05D114171C41F22C00EF50D5 /* ChopChop */,
+				05D114161C41F22C00EF50D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05D114161C41F22C00EF50D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05D114151C41F22C00EF50D5 /* ChopChop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05D114171C41F22C00EF50D5 /* ChopChop */ = {
+			isa = PBXGroup;
+			children = (
+				05D114461C41F24B00EF50D5 /* ChopChopSrc */,
+				052DD5141C47B90C00D88F8E /* LaunchScreen.storyboard */,
+				052DD5161C47B90C00D88F8E /* Main.storyboard */,
+				05D114181C41F22C00EF50D5 /* AppDelegate.swift */,
+				05D1144F1C41F43600EF50D5 /* ImagePickerViewController.swift */,
+				05D1141F1C41F22C00EF50D5 /* Assets.xcassets */,
+				05D1144B1C41F34900EF50D5 /* ImageCollectionViewCell.swift */,
+				05D1144D1C41F3CD00EF50D5 /* ImageCollectionViewController.swift */,
+				052DD5121C47B8A000D88F8E /* Info.plist */,
+			);
+			path = ChopChop;
+			sourceTree = "<group>";
+		};
+		05D114461C41F24B00EF50D5 /* ChopChopSrc */ = {
+			isa = PBXGroup;
+			children = (
+				052DD50E1C47B74000D88F8E /* ChopChop.swift */,
+			);
+			name = ChopChopSrc;
+			path = ChopChop;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05D114141C41F22C00EF50D5 /* ChopChop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05D1143D1C41F22C00EF50D5 /* Build configuration list for PBXNativeTarget "ChopChop" */;
+			buildPhases = (
+				05D114111C41F22C00EF50D5 /* Sources */,
+				05D114121C41F22C00EF50D5 /* Frameworks */,
+				05D114131C41F22C00EF50D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChopChop;
+			productName = PKImageMatrixCropper;
+			productReference = 05D114151C41F22C00EF50D5 /* ChopChop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05D1140D1C41F22C00EF50D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Pavan Kataria";
+				TargetAttributes = {
+					05D114141C41F22C00EF50D5 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 05D114101C41F22C00EF50D5 /* Build configuration list for PBXProject "ChopChop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05D1140C1C41F22C00EF50D5;
+			productRefGroup = 05D114161C41F22C00EF50D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05D114141C41F22C00EF50D5 /* ChopChop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05D114131C41F22C00EF50D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052DD5181C47B90C00D88F8E /* LaunchScreen.storyboard in Resources */,
+				052DD5131C47B8A000D88F8E /* Info.plist in Resources */,
+				05D114201C41F22C00EF50D5 /* Assets.xcassets in Resources */,
+				052DD5191C47B90C00D88F8E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05D114111C41F22C00EF50D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D114501C41F43600EF50D5 /* ImagePickerViewController.swift in Sources */,
+				05D114191C41F22C00EF50D5 /* AppDelegate.swift in Sources */,
+				052DD50F1C47B74000D88F8E /* ChopChop.swift in Sources */,
+				05D1144C1C41F34900EF50D5 /* ImageCollectionViewCell.swift in Sources */,
+				05D1144E1C41F3CD00EF50D5 /* ImageCollectionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		052DD5141C47B90C00D88F8E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				052DD5151C47B90C00D88F8E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		052DD5161C47B90C00D88F8E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				052DD5171C47B90C00D88F8E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05D1143B1C41F22C00EF50D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05D1143C1C41F22C00EF50D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05D1143E1C41F22C00EF50D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChopChop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pavankataria.ChopChop;
+				PRODUCT_NAME = ChopChop;
+			};
+			name = Debug;
+		};
+		05D1143F1C41F22C00EF50D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChopChop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pavankataria.ChopChop;
+				PRODUCT_NAME = ChopChop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05D114101C41F22C00EF50D5 /* Build configuration list for PBXProject "ChopChop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05D1143B1C41F22C00EF50D5 /* Debug */,
+				05D1143C1C41F22C00EF50D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05D1143D1C41F22C00EF50D5 /* Build configuration list for PBXNativeTarget "ChopChop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05D1143E1C41F22C00EF50D5 /* Debug */,
+				05D1143F1C41F22C00EF50D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05D1140D1C41F22C00EF50D5 /* Project object */;
+}
