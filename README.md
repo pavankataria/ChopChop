@@ -1,6 +1,6 @@
 ![ChopChop](https://github.com/pavankataria/ChopChop/blob/master/Resources/ChopChop-cover.png)
 
-## Description :leaves:
+## Description 
 
 Chop an image to as many quadrants as you like at compile time. 
 Suitable for games and image processing.
@@ -71,10 +71,6 @@ You'll then get your very own images array which contains your cropped/chopped u
 5. Create pull request
 
 
-License
-----
+## License
 
-MIT
-
-
-**Free Software, Hell Yeah!**
+**ChopChop** is available under the MIT license. 
