@@ -1,5 +1,6 @@
-# Chop Chop (v1)
 ![ChopChop](https://github.com/pavankataria/ChopChop/blob/master/Resources/ChopChop-cover.png)
+
+## Description :leaves:
 
 Chop an image to as many quadrants as you like at compile time. 
 Suitable for games and image processing.
@@ -48,7 +49,7 @@ You need to insert a tuple which consists of two ints which are attributed to ro
 ```Swift
         let rowsNum = 2
         let colsNum = 2
-        images = image.cropToMatrix((rowsNum, colsNum))
+        images = image.cropWithMatrix((rowsNum, colsNum))
 ```
 
 You'll then get your very own images array which contains your cropped/chopped up image.
@@ -58,14 +59,16 @@ You'll then get your very own images array which contains your cropped/chopped u
 + Add more helper functions to the PKImageMatrixCropper
 + Write Tests
 
-### Development
+### Roadmap
+- We are open to new and awesome ideas, contribute if you like! :)
 
-Want to contribute? Great!
+## Contribute
 
-PKImageMatrixCropper uses git for fast developing.
-+ Fork this repo
-+ Make a change
-+ And then make a pull request.
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create pull request
 
 
 License
