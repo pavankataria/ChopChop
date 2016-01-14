@@ -1,12 +1,9 @@
 # Chop Chop (v1)
-![ChopChop](https://github.com/pavankataria/ChopChop/Resources/ChopChop-cover.png)
- This package was also created to help a friend's problem. He tried _billions_ of tutorials to try and chop an image up into four but kept deleting his code as none worked for him.
- I figured there's got to be a way to allow a new person coming into Swift to be able to chop up an image right off the bat into as many equal quadrants as they like.
- I figured he probably wanted to chop up the image into four quadrants for a tile game. Then it struck me, why stop at making a simple method that chops into 4, why not create a small package with a UIImage extension to chop into as many quadrants as you like,  why not even specify a matrix?
+![ChopChop](https://github.com/pavankataria/ChopChop/blob/master/Resources/ChopChop-cover.png)
+Chop an image to as many quadrants as you like at compile time. 
+Suitable for games and image processing.
 
-Right?
-
-And so the idea was born!
+Great for dynamic content, s
 
 Here's what you can do with this package:
 
