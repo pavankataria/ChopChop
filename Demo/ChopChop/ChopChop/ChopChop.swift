@@ -36,6 +36,7 @@ protocol ChopChopProtocol {
     func cropToSquare() -> UIImage
     func cropWithMatrix(matrix: (rows: Int, cols: Int)) -> [UIImage]
 }
+
 extension UIImage: ChopChopProtocol {
     func cropToSquare() -> UIImage
     {
@@ -43,7 +44,11 @@ extension UIImage: ChopChopProtocol {
     }
     func cropWithMatrix(matrix: (rows: Int, cols: Int)) -> [UIImage]
     {
-        return ChopChop.cropImage(image: self, toMatrix: (rows: 2, cols: 2))
+        return ChopChop.cropImage(image: self, toMatrix: (rows: 2, cols: 2), maintainAspect: false)
+    }
+    func cropWithMatrixResize(matrix: (rows: Int, cols: Int)) -> [UIImage]
+    {
+        return ChopChop.cropImage(image: self, toMatrix: (rows: 2, cols: 2), maintainAspect: true)
     }
 }
 
@@ -74,7 +79,7 @@ class ChopChop: NSObject {
     }
     
     // A matrix cropper
-    static func cropImage(image originalImage: UIImage, toMatrix matrix: (rows: Int, cols: Int)) -> [UIImage]{
+    static func cropImage(image originalImage: UIImage, toMatrix matrix: (rows: Int, cols: Int), maintainAspect: Bool = false) -> [UIImage]{
         //TODO:
         /*        guard originalSquareImage.size.width % matrix.rows == 0 &&
         originalSquareImage.size.height % matrix.cols == 0 else {
@@ -89,7 +94,12 @@ class ChopChop: NSObject {
                 let x: CGFloat = CGFloat(rowPosition * Int(quadrantSize.width))
                 let y: CGFloat = CGFloat(colPosition * Int(quadrantSize.height))
                 let rect = CGRect(x: x, y: y, width: quadrantSize.width, height: quadrantSize.height)
-                images.append(self.crop(image: originalImage, cropRect: rect))
+                if maintainAspect {
+                    images.append(self.cropProportional(originalImage, scaledToWidth: rect.width))
+                }
+                else {
+                    images.append(self.crop(image: originalImage, cropRect: rect))
+                }
             }
         }
         return images
@@ -102,4 +112,20 @@ class ChopChop: NSObject {
         let image: UIImage = UIImage(CGImage: imageRef, scale: originalImage.scale, orientation: originalImage.imageOrientation)
         return image
     }
+    
+    /// Crops an image maintaining aspect ratio
+    static func cropProportional(sourceImage: UIImage, scaledToWidth: CGFloat) -> UIImage {
+        
+        let oldWidth = sourceImage.size.width
+        let scaleFactor = scaledToWidth / oldWidth
+        let newHeight = sourceImage.size.height * scaleFactor
+        let newWidth = oldWidth * scaleFactor
+        UIGraphicsBeginImageContext(CGSizeMake(newWidth, newHeight))
+        sourceImage.drawInRect(CGRectMake(0, 0, newWidth, newHeight))
+        let newImage: UIImage = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext()
+        return newImage
+    }
+    
+    
 }

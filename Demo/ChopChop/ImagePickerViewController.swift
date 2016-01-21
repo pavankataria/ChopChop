@@ -16,6 +16,7 @@ class ImagePickerViewController: UIViewController {
     @IBOutlet weak var pickedImage: UIImageView!
     @IBOutlet weak var rows: UITextField!
     @IBOutlet weak var cols: UITextField!
+    @IBOutlet weak var maintainAspect: UISwitch!
 
     var image: UIImage {
         set {
@@ -63,8 +64,12 @@ class ImagePickerViewController: UIViewController {
         }
 
         // You can use this method to chop by four
-        // images = image.cropToFourQuadrantsWithResize()
-        images = image.cropWithMatrix((rowsNum, colsNum))
+        if maintainAspect.on {
+            images = image.cropWithMatrixResize((rowsNum, colsNum))
+        }
+        else {
+            images = image.cropWithMatrix((rowsNum, colsNum))
+        }
         performSegueWithIdentifier(SegueIdentifiers.ImageViewer.rawValue, sender: self)
     }
 
