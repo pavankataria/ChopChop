@@ -20,6 +20,7 @@ Here's what you can do with this package:
 </p>
 <p></p>
 <br>
+--------
 
 ### Demo
 A demo is available which allows you:
