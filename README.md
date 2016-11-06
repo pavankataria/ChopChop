@@ -15,9 +15,12 @@ Here's what you can do with this package:
 ### Screenshots of Demo
  <p>
 <a href="url"><img src="https://cloud.githubusercontent.com/assets/1791244/12220110/e0d6c130-b758-11e5-88ee-08af7d865f28.PNG" align="left" height=700px></a>
+<p><br><br>
 <a href="url"><img src="https://cloud.githubusercontent.com/assets/1791244/12220111/e2336dbc-b758-11e5-89ff-3eef44a4ce10.PNG" align="left" height=700px></a> 
-<p>
-<p>
+</p>
+<p></p>
+<br>
+
 ### Demo
 A demo is available which allows you:
   - to pick an image,
