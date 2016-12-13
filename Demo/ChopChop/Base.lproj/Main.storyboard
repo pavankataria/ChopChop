@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4wy-WK-gsk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4wy-WK-gsk">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
@@ -63,6 +63,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maintain Aspect:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGF-5R-60k">
+                                <rect key="frame" x="180" y="452" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dx3-zl-aA1">
+                                <rect key="frame" x="371" y="447" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -71,9 +80,14 @@
                             <constraint firstItem="U3O-ba-GRp" firstAttribute="top" secondItem="YGP-jy-C9c" secondAttribute="bottom" constant="13" id="7V2-J6-gwC"/>
                             <constraint firstItem="GEy-V6-pSj" firstAttribute="top" secondItem="8WN-OC-oNH" secondAttribute="bottom" constant="16" id="8TP-dS-UjH"/>
                             <constraint firstItem="8WN-OC-oNH" firstAttribute="top" secondItem="xVe-lh-L18" secondAttribute="bottom" constant="13" id="8bh-P2-hIU"/>
+                            <constraint firstItem="Dx3-zl-aA1" firstAttribute="leading" secondItem="CGF-5R-60k" secondAttribute="trailing" constant="61" id="Le3-F0-NMY"/>
+                            <constraint firstItem="CGF-5R-60k" firstAttribute="centerY" secondItem="Dx3-zl-aA1" secondAttribute="centerY" id="M1q-uX-7dh"/>
                             <constraint firstItem="8WN-OC-oNH" firstAttribute="leading" secondItem="xVe-lh-L18" secondAttribute="leading" id="MOC-D4-Ay7"/>
                             <constraint firstItem="C22-28-ttN" firstAttribute="bottom" secondItem="U3O-ba-GRp" secondAttribute="bottom" id="Oen-D5-urp"/>
                             <constraint firstItem="GEy-V6-pSj" firstAttribute="leading" secondItem="xVe-lh-L18" secondAttribute="leading" id="Qb2-rj-NPP"/>
+                            <constraint firstItem="CGF-5R-60k" firstAttribute="leading" secondItem="xVe-lh-L18" secondAttribute="leading" id="clo-El-MdR"/>
+                            <constraint firstItem="CGF-5R-60k" firstAttribute="top" secondItem="C22-28-ttN" secondAttribute="bottom" constant="20" id="g6d-qK-wPo"/>
+                            <constraint firstItem="CGF-5R-60k" firstAttribute="trailing" secondItem="8WN-OC-oNH" secondAttribute="trailing" id="hDO-bh-EEu"/>
                             <constraint firstItem="xVe-lh-L18" firstAttribute="top" secondItem="upF-X7-GvV" secondAttribute="bottom" constant="8" id="lyW-75-548"/>
                             <constraint firstItem="YGP-jy-C9c" firstAttribute="leading" secondItem="GEy-V6-pSj" secondAttribute="trailing" constant="8" symbolic="YES" id="mf9-fx-hN7"/>
                             <constraint firstItem="U3O-ba-GRp" firstAttribute="width" secondItem="YGP-jy-C9c" secondAttribute="width" id="okc-Wa-WOx"/>
@@ -88,6 +102,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="cols" destination="U3O-ba-GRp" id="6zN-aY-TtX"/>
+                        <outlet property="maintainAspect" destination="Dx3-zl-aA1" id="hqD-Sl-6MO"/>
                         <outlet property="pickedImage" destination="xVe-lh-L18" id="rGU-PV-hwk"/>
                         <outlet property="rows" destination="YGP-jy-C9c" id="MYz-h5-3Nq"/>
                         <segue destination="cXw-F3-VAB" kind="show" identifier="ShowImageViewer" id="OJe-x5-HNH"/>
